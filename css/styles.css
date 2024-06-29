@@ -1,0 +1,62 @@
+:root {
+        /* --main-menu-item-color: #7D7D7D; kebab case */
+        /* --mainMenuItemColor: #7D7D7D; camel case*/
+        /* main_menu_item_color #7D7D7D;snake case*/
+        /* Colors */
+    --main-menu-item-color: #7d7d7d;
+    --accent-menu-item-color: #03A9F4;
+    --gallery-name-color: #b4ad9e;
+    --primary-gallery-text-color: #626262;
+    /* Fonts */
+    --font-family: "Playfair Display", sans-serif;
+    --second-family: "Ubuntu", sans-serif;
+}
+
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-gallery-text-color);
+}
+.container {
+    outline: 1px solid red;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.menu {
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+}
+.menu-link {
+    color: var(--main-menu-item-color);
+}
+.menu-link:hover {
+    color: var(--accent-menu-item-color);
+}
+
+.gallery-list {
+display: flex;
+flex-wrap: wrap;
+
+}
+.gallery-item {
+ width: 420px;   
+}
+.gallery-item-name {
+    font-family: var(--second-family);
+    font-weight: 300;
+    color: var(--gallery-name-color);
+}
+.gallery-item-title {
+    font-size: 30px;
+    font-weight: inherit;
+}
